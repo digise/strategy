@@ -1,4 +1,4 @@
-public class ManhattanDistance implements IDIstanceStrategy {
+public class ManhattanDistance implements IDistanceStrategy {
 
     public ManhattanDistance() {
     }

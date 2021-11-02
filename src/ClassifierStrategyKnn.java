@@ -1,12 +1,10 @@
 public class ClassifierStrategyKnn implements IClassifierStrategy{
 
-    private IDIstanceStrategy distanceStrategy;
-    public ClassifierStrategyKnn(IDIstanceStrategy idIstanceStrategy) {
-        this.distanceStrategy = idIstanceStrategy;
+    public ClassifierStrategyKnn() {
     }
 
     @Override
-    public void execute() {
+    public void execute(IDistanceStrategy distanceStrategy) {
         distanceStrategy.computed();
         System.out.println("ClassifierKnn executed");
     }

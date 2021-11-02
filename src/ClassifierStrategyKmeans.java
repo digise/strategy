@@ -1,12 +1,11 @@
-public class ClassifierStrategyKmeans implements IClassifierStrategy {
+public class ClassifierStrategyKmeans implements IClassifierStrategy{
 
-    private IDIstanceStrategy distanceStrategy;
-    public ClassifierStrategyKmeans(IDIstanceStrategy distanceStrategy) {
-        this.distanceStrategy = distanceStrategy;
+    public ClassifierStrategyKmeans() {
+
     }
 
     @Override
-    public void execute() {
+    public void execute(IDistanceStrategy distanceStrategy) {
         distanceStrategy.computed();
         System.out.println("ClassifierKmeans executed");
     }

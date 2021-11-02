@@ -1,4 +1,4 @@
-public class EuclideanDistance implements IDIstanceStrategy{
+public class EuclideanDistance implements IDistanceStrategy {
     public EuclideanDistance() {
     }
 

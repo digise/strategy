@@ -1,12 +1,10 @@
-public class ClassifierStrategySOM implements IClassifierStrategy {
+public class ClassifierStrategySOM implements IClassifierStrategy{
 
-    private IDIstanceStrategy distanceStrategy;
-    public ClassifierStrategySOM(IDIstanceStrategy distanceStrategy) {
-        this.distanceStrategy = distanceStrategy;
+    public ClassifierStrategySOM() {
     }
 
     @Override
-    public void execute() {
+    public void execute(IDistanceStrategy distanceStrategy) {
         distanceStrategy.computed();
         System.out.println("ClassifierSOM executed");
     }

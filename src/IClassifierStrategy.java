@@ -1,4 +1,4 @@
 public interface IClassifierStrategy {
 
-    public void execute();
+    public void execute(IDistanceStrategy distanceStrategy);
 }
